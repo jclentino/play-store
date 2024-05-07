@@ -1,0 +1,405 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: cursive;
+}
+
+
+/* Header */
+
+header ul {
+	background-color: black;
+	overflow: hidden;
+}
+
+ul li {
+	color: white;
+	display: inline-block;
+	padding: 20px;
+	text-align: center;
+}
+
+li a{
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+	margin: 0 5px; 
+}
+
+a i {
+	font-size: 24px;
+}
+
+ul li:hover {
+	background-color: red;
+}
+
+@media screen and (max-width: 600px){
+	ul li { display: block; }
+}
+/* Banner */
+
+.icon-play2 {
+	width: 100%; 
+	height: auto;
+}
+
+/* Seccion de juegos */
+
+/* Seccion 1 */
+section{
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.juegos  {
+	display: flex;
+	flex-direction: row;
+}
+
+.juegos .tarjeta {
+	width: 33.33333%; 
+	border: 1px solid #ddd;
+	margin: 20px;
+	box-shadow: 2px 3px 3px 3px #999;
+}
+
+.juegos .tarjeta:hover {
+	box-shadow: 3px 4px 4px 4px #999;
+}
+
+.tarjeta div {
+	position: relative;
+	width: 100%; 
+	height: auto; 
+}
+
+div h1 {
+	position: absolute;
+	top: 5%; 
+	left: 4	0%;
+	transform: translate();
+	color: transparent;
+	text-transform: uppercase;
+}
+
+.tarjeta img {
+	width: 100%; 
+	height: auto;
+}
+
+
+.tarjeta .tarjeta2 {
+	padding: 20px;
+	text-align: center;
+}
+
+
+/* Seccion 2 */
+
+section .info-juegos {
+	width: 100%; 
+	text-align: center;
+	padding: 20px;
+}
+
+.info-juegos button {
+	border-radius: 4px;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background-color: red;
+	box-shadow: 0 2px 2px black;
+}
+
+button a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+}
+
+button:hover {
+	background-color: blue;
+}
+
+
+@media screen and (max-width: 800px){
+	.juegos {
+		flex-direction: column;
+	}
+
+	.juegos .tarjeta {
+		width: 90%; 
+	}
+}
+
+
+/* Noticias 2 */
+
+.noticias2 {
+	width: 100%; 
+}
+
+.image img {
+	width: 100%;
+}
+
+/* Noticias */
+.noticias {
+	display: flex;
+	flex-direction: row;
+	margin-top: -5px;
+	padding: 20px;
+}
+
+.noticias .noticia-one{
+	width: 25%; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.noticia-one .one {
+	text-align: center;
+}
+
+
+.noticias .noticia-two {
+	padding: 20px;
+	width: 75%; 
+}
+
+
+.noticia-two img {
+	width: 100%; 
+}
+
+
+@media screen and (max-width: 900px){
+	.noticias {
+		flex-direction: column;
+	}
+
+	.noticias .noticia-one, .noticias .noticia-two{
+		width: 100%; 
+	}
+}
+
+.btn {
+	background-color: blue;
+	color: white; 
+	border-radius: 4px; 
+	padding: 10px 20px;
+	display: block;
+	margin: auto;
+	font-size: 18px;
+}
+
+.btn:hover {
+	background-color: red;
+}
+
+
+/* Banner */
+div img {
+	width: 100%; 
+}
+
+
+/* Productos */
+h1 {
+	text-align: center;
+	margin: 20px;	
+}
+
+.parrafo {
+	text-align: center;
+	margin: 20px;
+}
+
+.objetos {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 20px;
+	text-align: center;
+}
+
+.objetos .objeto-one, .objetos .objeto-two{
+	flex: 50%;
+	display: flex; 
+}
+
+.objeto-one div, .objeto-two div {
+	flex: 50%;
+	padding: 20px;
+
+}
+
+.objetos img {
+	border-radius: 80%;
+	height: 300px;
+}
+
+@media screen and (max-width: 850px){
+	.objetos {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.objetos .objeto-one, .objetos .objeto-two{
+		flex-direction: column;
+	}
+}
+
+.btn2 {
+	align-items: center;
+	border-radius: 4px;
+	padding: 10px 20px;
+	margin: 10px 0;
+	background-color: red;
+	color: white;
+	box-shadow: 0 2px 2px black;
+	display: block;
+	margin: auto;
+	font-size: 18px;
+}
+
+a  i {
+	font-size: 18px;
+}
+
+/* Footer */
+.contacto {
+	display: flex;
+	flex-direction: row; 
+	justify-content: space-around;
+	text-align: center;
+	padding: 60px;
+	margin-top: 40px;
+	background-color: black;
+	color: white;
+}
+
+.contacto .copy {
+	font-size: 24px;
+	font-family: cursive;
+}
+
+
+.contacto .icon-contacto {
+	font-size: 28px;
+}
+
+.icon-contacto a {
+	color: white;
+	margin: 0 5px;
+}
+
+.icon-contacto i {
+	font-size: 40px;
+}
+
+@media screen and (max-width: 600px) {
+	.contacto {
+		flex-direction: column;
+	}
+
+	.contacto div {
+		margin: 5px;
+	}
+}
+  
+/* Seccion Noticias */
+.iframe-section {
+	height: 100vh;
+	width: 100%;
+	padding: 20px;
+}
+
+.iframe-section iframe {
+	width: 100%;
+	height: 100%;
+}
+
+/* Seccion productos */
+.mejoresJuegos {
+	padding: 60px 40px;
+	width: 100%;
+	height: 100vh;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 2px solid #ddd;
+}
+  
+caption {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+  
+th, td {
+	padding: 12px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+  
+th {
+	background-color: #f2f2f2;
+}
+  
+tr:hover {
+	background-color: #f5f5f5;
+}
+  
+@media screen and (max-width: 600px) {
+	table {
+	  	border: 0;
+	}
+
+	table caption {
+	  	font-size: 1.3em;
+	}
+
+	table thead {
+	  	display: none;
+	}
+
+	table tr {
+		margin-bottom: 10px;
+		display: block;
+		border: 2px solid #ddd;
+	}
+
+	table td {
+		border: none;
+		border-bottom: 1px solid #ddd;
+		display: block;
+		text-align: right;
+	}
+
+	table td:last-child {
+	  	border-bottom: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

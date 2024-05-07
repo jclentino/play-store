@@ -1,0 +1,132 @@
+/* Seccion 1 */
+.accion {
+	display: flex; 
+	flex-direction: row;
+	margin: 30px; 
+}
+
+.accion1, .accion2{
+	width: 50%; 
+}
+
+.accion1 .accion1-sub{
+	border: 2px solid #ddd; 
+	margin: 0 20px;
+	border-radius: 4px;
+}
+
+.accion1-sub div {
+	padding: 20px;
+	text-align: center;
+}
+
+.accion2 {
+	display: flex; 
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	padding: 20px;
+}
+
+
+@media screen and (max-width: 600px){
+	.accion {
+		flex-direction: column;
+	}
+
+	.accion1, .accion2 {
+		width: 100%;
+	}
+}
+
+/* Seccion 2 */
+
+.accion-secciones {
+	background-color: black;
+	display: flex;
+	flex-direction: row; 
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.accion-secciones .accion-seccion{
+	margin: 10px 20px;
+	background-color: white;
+	width: 24.99999%;
+}
+
+.accion-seccion p  {
+	padding: 20px;
+}
+
+.accion-secciones img {
+	height: 250px;
+	width: 100%;
+}
+
+
+@media screen and (max-width: 800px){
+	.accion-secciones {
+		flex-direction: column;
+		height: auto;
+	}
+
+	.accion-secciones .accion-seccion {
+		margin: 20px;
+		width: 90%;
+	}
+
+	.accion-secciones img {
+		height: auto;
+	}
+}
+
+.juegos-seccion {
+	display: flex; 
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 30px; 
+}
+
+.juegos-seccion div {
+	width: 50%;
+	margin: auto;
+}
+
+.juegos-seccion img {
+	border-radius: 50%; 
+}
+
+@media screen and (max-width: 600px){
+	.juegos-seccion div {
+		width: 90%; 
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
